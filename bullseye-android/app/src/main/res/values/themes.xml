@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the theme applied to the application or activity -->
+    <style name="OrangeTheme"
+        parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/OrangeTheme.ActionBar</item>
+        <item name="android:actionMenuTextAppearance">@style/OrangeTheme.ActionBar.MenuTextAppearance</item>
+        <item name="android:textViewStyle">@style/AppTextViewMedium</item>
+        <item name="android:editTextStyle">@style/AppEditTextStyleMedium</item>
+        <item name="android:selectableItemBackground">@drawable/action_bar_item_selector</item>
+        <item name="android:actionButtonStyle">@style/OrangeTheme.ActionButton</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="OrangeTheme.ActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@android:color/holo_orange_dark</item>
+        <item name="android:titleTextStyle">@style/OrangeTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="OrangeTheme.ActionButton" parent="android:style/Widget.Holo.Light.ActionButton">
+        <item name="android:background">@drawable/action_bar_item_selector</item>
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="OrangeTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- MEDIUM FONT SIZE -->
+    <style name="AppTextViewMedium">
+        <item name="android:textSize">@dimen/app_medium_font</item>
+    </style>
+
+    <style name="OrangeTheme.TextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/app_medium_font</item>
+    </style>
+
+    <style name="AppEditTextStyleMedium" parent="android:Widget.EditText">
+        <item name="android:textSize">@dimen/app_medium_font</item>
+    </style>
+
+    <style name="OrangeTheme.ActionBar.MenuTextAppearance" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textSize">@dimen/font_size_17</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>

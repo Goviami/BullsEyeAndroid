@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.goviami.bullseye.activity.RegisterActivity">
+
+    <item android:id="@+id/action_next"
+        android:title="@string/action_next"
+        android:showAsAction="ifRoom|withText"/>
+
+</menu>

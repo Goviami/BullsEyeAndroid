@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.goviami.bullseye" >
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_orange"
+        android:label="@string/app_name"
+        android:theme="@style/theme" >
+        <activity
+            android:name=".activity.TermsActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/OrangeTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.UserProfileActivity"
+            android:theme="@style/OrangeTheme"
+            android:label="@string/title_activity_user_profile"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <!-- Declare the bundled CropImage Activity -->
+        <activity android:name="com.android.camera.CropImage"
+            android:label="@string/title_activity_crop_image"
+            android:theme="@style/OrangeTheme">
+        </activity>
+        <activity android:name=".activity.ManageLauncherActivity"
+            android:theme="@style/OrangeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

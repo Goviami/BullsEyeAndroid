@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="line1"
+        android:id="@+id/dialogLine1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="line2"
+        android:id="@+id/dialogLine2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:paddingRight="@dimen/padding_5"
+        android:paddingLeft="@dimen/padding_5"
+        android:minLines="@integer/lines_2" />
+</LinearLayout>

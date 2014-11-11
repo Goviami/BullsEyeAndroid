@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@android:color/holo_orange_dark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="title"
+        android:id="@+id/dialogTitle"
+        android:textSize="@dimen/font_size_20"
+        android:fontFamily="san"
+        android:textColor="@android:color/white"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10" />
+
+</LinearLayout>
