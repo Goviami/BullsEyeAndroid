@@ -8,7 +8,10 @@ public final class AppConstants {
     public static final String PROFILE_PIC_PATH_KEY = "PROFILE_PIC_PATH";
     public static final String PROFILE_NAME_KEY = "PROFILE_NAME";
     public static final String LAUNCHER_ACTIVITY_KEY = "LAUNCH_ACTIVITY";
+    public static final String SCREEN_ACTIVE_KEY = "SCREEN_ACTIVE";
     public static final String PROFILE_PIC_NAME = "IMG_PROFILE_PIC.jpg";
+    public static final String DART_SERVICE_BROADCAST_NAME = "com.goviami.bullseye.dartmsg.MESSAGE";
+    public static final String NOTIFICATION_MESSAGE_GROUP = "GROUP_DART_MSG";
     public static final int TERMS_ACTIVITY_KEY = 0;
     public static final int REGISTER_ACTIVITY_KEY = 1;
     public static final int USER_PROFILE_ACTIVITY_KEY = 2;
@@ -18,4 +21,5 @@ public final class AppConstants {
     public static final int PHONE_LENGTH = 10;
     public static final int PROFILE_PIC_QUALITY = 100;
     public static final int PROFILE_PIC_DIMEN = 256;
+    public static final int SERVICE_INTERVAL_SEC = 5;
 }

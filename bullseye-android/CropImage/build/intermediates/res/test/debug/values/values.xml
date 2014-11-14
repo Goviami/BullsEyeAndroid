@@ -73,7 +73,7 @@
     <string name="context_menu_header">Picture options</string>
     <string name="crop_discard_text">Discard</string>
     <string name="crop_label">Crop picture</string>
-    <string name="crop_save_text">Save</string>
+    <string name="crop_save_text">Crop</string>
     <string name="default_value_pref_gallery_size" translatable="false">1</string>
     <string name="default_value_pref_gallery_slideshow_interval" translatable="false">"2"</string>
     <string name="default_value_pref_gallery_slideshow_transition" translatable="false">"0"</string>

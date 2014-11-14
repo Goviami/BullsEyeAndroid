@@ -28,15 +28,23 @@
     <!-- User Profile -->
     <string name="title_activity_user_profile">" About You"</string>
     <string name="enter_name_msg">Your Name</string>
-    <string name="profile_pic_dialog_tilte">Choose Picture</string>
+    <string name="profile_pic_dialog_tilte">Choose Pi
+        cture</string>
     <string name="pic_camera">Camera</string>
     <string name="pic_gallery">Gallery</string>
     <string name="title_activity_crop_image">" Crop Image"</string>
+
     <string-array name="allowedGalOptions">
         <item>Gallery</item>
         <item>Photos</item>
         <item>Dropbox</item>
     </string-array>
+
     <string name="toast_inavlid_profile_name">Please enter your name</string>
+
+    <!-- Background Service -->
+    <string name="title_service_dart_background">DartBackgroundService</string>
+    <string name="title_activity_landing">LandingActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

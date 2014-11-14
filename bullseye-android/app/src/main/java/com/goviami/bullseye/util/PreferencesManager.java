@@ -39,6 +39,13 @@ public class PreferencesManager {
         return sInstance;
     }
 
+    public static boolean isInstantiated(){
+        if(sInstance == null){
+            return false;
+        }
+        return true;
+    }
+
     public void putValue(String key, int value) {
         sPref.edit().putInt(key, value).commit();
     }

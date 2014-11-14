@@ -1,11 +1,16 @@
 package com.goviami.bullseye.activity;
 
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.SystemClock;
+import android.support.v4.content.LocalBroadcastManager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -17,6 +22,8 @@ import android.widget.Toast;
 
 import com.android.camera.CropImageIntentBuilder;
 import com.goviami.bullseye.R;
+import com.goviami.bullseye.receiver.ServiceBroadcastReceiver;
+import com.goviami.bullseye.service.DartBackgroundService;
 import com.goviami.bullseye.util.AppConstants;
 import com.goviami.bullseye.util.ImagePickUpUtil;
 import com.goviami.bullseye.util.PreferencesManager;
@@ -45,6 +52,9 @@ public class UserProfileActivity extends Activity {
         if(profileName!=null){
             profileNameText.setText(profileName);
         }
+
+        //Register Service Broadcast Receiver
+        LocalBroadcastManager.getInstance(this).registerReceiver(new ServiceBroadcastReceiver(this), new IntentFilter(AppConstants.DART_SERVICE_BROADCAST_NAME));
     }
 
     @Override
@@ -65,6 +75,18 @@ public class UserProfileActivity extends Activity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        /*AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        Intent intent = new Intent(this, DartBackgroundService.class);
+        PendingIntent pendingIntent = PendingIntent.getService(this, 0, intent, 0);
+        alarmManager.cancel(pendingIntent);
+        alarmManager.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
+                SystemClock.elapsedRealtime() + AppConstants.SERVICE_INTERVAL_SEC * 1000,
+                AppConstants.SERVICE_INTERVAL_SEC * 1000, pendingIntent);*/
     }
 
     @Override
